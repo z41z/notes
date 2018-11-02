@@ -1,5 +1,8 @@
 ```js
 {
+  "files.associations": {
+    "*.dwt": "smarty"
+  },
   "emmet.includeLanguages": {
     "ftl": "html",
     "wxml": "html"
