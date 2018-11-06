@@ -1,4 +1,3 @@
-``` js
 import axios from 'axios';
 
 // 创建axios实例
@@ -32,5 +31,3 @@ service.interceptors.response.use(
 );
 
 export default service;
-
-```
