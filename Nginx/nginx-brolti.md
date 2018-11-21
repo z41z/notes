@@ -24,7 +24,7 @@
   yum install git
 ```
 
-- 安装ngx_brotli模块并编译
+- 安装ngx_brotli模块并编译 Tips: brotli require HTTPS
 
 ``` bash
   git clone https://github.com/google/ngx_brotli.git
