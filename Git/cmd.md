@@ -12,3 +12,10 @@ git config --global user.name "username"
 
 git config --global user.email "email"
 ```
+useradd userName
+passwd userName
+ssh-keygen
+mkdir ~/.ssh && touch ~/.ssh/authorized_keys
+cat .ssh/id_rsa.pub | ssh user@123.45.6.78 "cat >> ~/.ssh/authorized_keys"
+git init --bare sample.git
+
