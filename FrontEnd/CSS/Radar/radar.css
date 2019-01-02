@@ -22,11 +22,6 @@
   border: 1px dotted #fb0000;
 }
 
-.radar .circle:nth-child(1) {
-  height: 98%;
-  width: 98%;
-}
-
 .radar .circle:nth-child(2) {
   height: 80%;
   width: 80%;
