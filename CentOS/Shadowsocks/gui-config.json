@@ -1,0 +1,16 @@
+{
+"configs" : [
+  {
+"server" : "Shadowsocks IP",
+"server_port" : Shadowsocks Port,
+"password" : "Shadowsocks password",
+"method" : "aes-256-cfb",
+"remarks" : ""}
+
+],
+"index" : 0,
+"global" : false,
+"enabled" : true,
+"shareOverLan" : true,
+"isDefault" : false,
+"localPort" : 1080}
