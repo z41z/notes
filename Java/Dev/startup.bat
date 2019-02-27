@@ -1,0 +1,2 @@
+start "Tomcat YOUR_TOMCAT_PROJECT" cmd /k "echo 'Starting YOUR_PROJECT'&&catalina startup"
+start "YOUR_JAR_PROJECT" cmd /k "echo 'Starting YOUR_JAR_PROJECT'&&d:&&cd YOUR_TARGET_HOME&&java -jar YOUR_PACKAGE_NAME.jar"
