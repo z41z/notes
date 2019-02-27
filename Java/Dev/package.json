@@ -1,0 +1,16 @@
+{
+  "name": "java-autoload-for-frontend",
+  "version": "1.0.0",
+  "description": "autoload browser and copy template files to tomcat",
+  "main": "bs-config.js",
+  "scripts": {
+    "dev": "browser-sync start --config bs-config.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "child_process": "^1.0.2",
+    "chalk": "^2.4.2"
+  }
+}
