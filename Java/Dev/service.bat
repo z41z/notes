@@ -1,5 +1,5 @@
 @echo Build Service
-taskkill /FI "WINDOWTITLE eq 管理员:  PRO_SERVICE"
+taskkill /f /t /FI "WINDOWTITLE eq 管理员:  PRO_SERVICE"
 title PRO_SERVICE
 set SERVICE_HOME=YourSeviceHome
 set TOMCAT_HOME=YourTomcatHome

@@ -1,5 +1,5 @@
 @echo Build Client
-taskkill /FI "WINDOWTITLE eq 管理员:  PRO_CLIENT"
+taskkill /f /t /FI "WINDOWTITLE eq 管理员:  PRO_CLIENT"
 title PRO_CLIENT
 cd client
 call mvn clean install
