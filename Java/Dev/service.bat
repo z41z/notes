@@ -1,4 +1,6 @@
 @echo Build Service
+taskkill /FI "WINDOWTITLE eq π‹¿Ì‘±:  PRO_SERVICE"
+title PRO_SERVICE
 set SERVICE_HOME=YourSeviceHome
 set TOMCAT_HOME=YourTomcatHome
 cd service
