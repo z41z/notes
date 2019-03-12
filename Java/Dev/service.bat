@@ -4,11 +4,11 @@ title PRO_SERVICE
 set SERVICE_HOME=YourSeviceHome
 set TOMCAT_HOME=YourTomcatHome
 cd service
-rd /s/Q target
+REM rd /s/Q target
 call catalina stop
 call mvn clean install
 cd %SERVICE_HOME%/target
-rename oldName.war ROOT.war
+move /f oldName.war ROOT.war
 cd %TOMCAT_HOME%
 rd /s/Q webapps
 md webapps
