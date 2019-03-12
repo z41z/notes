@@ -1,12 +1,12 @@
 @echo Build Service
-set SERVICE_HOME=YourProjectHome
+set SERVICE_HOME=YourSeviceHome
 set TOMCAT_HOME=YourTomcatHome
 cd service
+rd /s/Q target
 call catalina stop
 call mvn clean install
 cd %SERVICE_HOME%/target
-del ROOT.war
-rename BUILD_RESULT.war ROOT.war
+rename oldName.war ROOT.war
 cd %TOMCAT_HOME%
 rd /s/Q webapps
 md webapps
