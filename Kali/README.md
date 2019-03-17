@@ -5,6 +5,7 @@
  
  ``` bash
   apt-get update
+  apt --fix-broken install
  ```
  
  ``` bash
