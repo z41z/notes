@@ -35,3 +35,6 @@
  - 方案二：ctrl+alt+delete跳过
  - 方案三：sudo apt install exfat-fuse exfat-utils
  - 方案四：关闭WiFi
+
+### 打开或运行Chrome
+ - [Kali forums](https://forums.kali.org/showthread.php?26604-Google-chrome-not-starting-as-root-in-kali-2-0)
