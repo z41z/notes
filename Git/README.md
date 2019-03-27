@@ -24,3 +24,5 @@ cat .ssh/id_rsa.pub | ssh user@123.45.6.78 "cat >> ~/.ssh/authorized_keys"
 
 git init --bare sample.git
 
+# 错误处理
+git pull origin master --allow-unrelated-histories
