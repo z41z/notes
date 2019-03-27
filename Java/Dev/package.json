@@ -4,7 +4,9 @@
   "description": "autoload browser and copy template files to tomcat",
   "main": "bs-config.js",
   "scripts": {
-    "dev": "browser-sync start --config bs-config.js"
+    "dev": "startup",
+    "build:client": "client",
+    "build:service": "service"
   },
   "author": "",
   "license": "MIT",
