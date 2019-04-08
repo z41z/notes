@@ -2,7 +2,6 @@ const puppeteer = require("puppeteer")
 const fs = require('fs');
 const request = require('request');
 
-let result = [];
 const scrape = async (url, pageNum) => {
   const browser = await puppeteer.launch({
     headless: false
@@ -73,6 +72,7 @@ const scrape = async (url, pageNum) => {
 
   if (pageNum > 1) {
     let nextPage = pageNum--
+    browser.close()
     scrape('http://www.cdlr.gov.cn/second/zpgjg.aspx?ClassID=001002002006001', nextPage)
   }
 }
