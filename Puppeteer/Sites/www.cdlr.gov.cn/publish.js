@@ -9,7 +9,7 @@ let PAGE_TOTAL = 1;
 const URL = 'http://www.cdlr.gov.cn/second/zpgjg.aspx?ClassID=001002002006001';
 let result = []
 fs.readFile('./publish.json', function (err, res) {
-  result = !res.toString()?[]:JSON.parse(res.toString())
+  result = !res.toString() ? [] : JSON.parse(res.toString())
 })
 
 const scrape = async () => {
@@ -54,9 +54,10 @@ const scrape = async () => {
             code,
             address,
             area,
+            areaTrans: area.split('\n')[0],
             type,
             startPrice,
-            startPriceTrans:startPrice.indexOf('亩')>-1?(startPrice.replace(/[^(\d+\.?\d+)]/ig,'')/0.0666).toFixed(2):startPrice.replace(/[^(\d+\.?\d+)]/ig,'')
+            startPriceTrans: startPrice.indexOf('亩') > -1 ? (startPrice.replace(/[^(\d+\.?\d+)]/ig, '') / 0.0666).toFixed(2) : startPrice.replace(/[^(\d+\.?\d+)]/ig, '')
           })
         }
       })
@@ -82,7 +83,7 @@ const scrape = async () => {
       }
     }
     result = result.concat(infos)
-    fs.writeFile('publish.json', JSON.stringify(result).replace(/\]\[/ig, ','), function (res) {})
+    fs.writeFile('publish.json', JSON.stringify(result).replace(/\]\[/ig, ','), function (res) { })
   }
 
   if (PAGE_TOTAL > 1) {
@@ -102,7 +103,7 @@ const parseData = () => {
         content.push(item)
       }
     })
-    fs.writeFile('./publish.json', JSON.stringify(content), function (err) {})
+    fs.writeFile('./publish.json', JSON.stringify(content), function (err) { })
   })
 }
 scrape();

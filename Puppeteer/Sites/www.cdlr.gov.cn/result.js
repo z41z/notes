@@ -7,7 +7,7 @@ let PAGE_TOTAL = 1;
 const URL = 'http://www.cdlr.gov.cn/second/zpggg.aspx?ClassID=001002002006001';
 let result = [];
 fs.readFile('./result.json', function (err, res) {
-  result = !res.toString()?[]:JSON.parse(res.toString())
+  result = !res.toString() ? [] : JSON.parse(res.toString())
 })
 
 const parseData = () => {
@@ -21,7 +21,7 @@ const parseData = () => {
         content.push(item)
       }
     })
-    fs.writeFile('./result.json', JSON.stringify(content), function (err) {})
+    fs.writeFile('./result.json', JSON.stringify(content), function (err) { })
   })
 }
 
@@ -53,16 +53,16 @@ const scrape = async () => {
       document.querySelectorAll('#myFonts > div:nth-child(2) table  tbody tr').forEach((item, index) => {
         if (index > 0) {
           let code = item.querySelector('td:nth-child(2)').innerText || ''
-          let endPrice = item.querySelector('td:nth-child(5)').innerText=='/'?'0':item.querySelector('td:nth-child(5)').innerText
-          let endPriceTotal = item.querySelector('td:nth-child(6)').innerText =='/'?'0':item.querySelector('td:nth-child(6)').innerText
+          let endPrice = item.querySelector('td:nth-child(5)').innerText == '/' ? '0' : item.querySelector('td:nth-child(5)').innerText
+          let endPriceTotal = item.querySelector('td:nth-child(6)').innerText == '/' ? '0' : item.querySelector('td:nth-child(6)').innerText
           let owner = item.querySelector('td:nth-child(7)').innerText || ''
           detail.push({
             url: location.href,
             code,
             endPrice,
-            endPriceTrans:endPrice.indexOf('亩')>-1?(endPrice.replace(/[^(\d+\.?\d+)]/ig,'')/0.0666).toFixed(2):endPrice.replace(/[^(\d+\.?\d+)]/ig,''),
+            endPriceTrans: endPrice.indexOf('亩') > -1 ? (endPrice.replace(/[^(\d+\.?\d+)]/ig, '') / 0.0666).toFixed(2) : endPrice.replace(/[^(\d+\.?\d+)]/ig, ''),
             endPriceTotal,
-            endPriceTotalTrans:endPriceTotal.replace(/[^(\d+\.?\d+)]/ig,''),
+            endPriceTotalTrans: endPriceTotal.replace(/[^(\d+\.?\d+)]/ig, ''),
             owner
           })
         }
@@ -73,7 +73,7 @@ const scrape = async () => {
     });
 
     result = result.concat(infos)
-    fs.writeFile('./result.json', JSON.stringify(result), function (res) {})
+    fs.writeFile('./result.json', JSON.stringify(result), function (res) { })
   }
 
   if (PAGE_TOTAL > 1) {
