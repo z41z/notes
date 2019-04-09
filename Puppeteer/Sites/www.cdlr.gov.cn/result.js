@@ -3,14 +3,18 @@
  */
 const puppeteer = require("puppeteer-core")
 const fs = require('fs');
-let PAGE_TOTAL = 2;
+let PAGE_TOTAL = 1;
 const URL = 'http://www.cdlr.gov.cn/second/zpggg.aspx?ClassID=001002002006001';
+let result = [];
+fs.readFile('./result.json', function (err, res) {
+  result = !res.toString()?[]:JSON.parse(res.toString())
+})
 
 const parseData = () => {
   let content = [];
   let codeArr = [];
   fs.readFile('./result.json', function (err, res) {
-    let data = (res.toString().replace(/\]\[/ig, ',').replace(/,,/ig,','))
+    let data = (res.toString().replace(/\]\[/ig, ','))
     JSON.parse(data).forEach(item => {
       if (codeArr.indexOf(item.code) < 0) {
         codeArr.push(item.code)
@@ -32,7 +36,7 @@ const scrape = async () => {
 
   await page.goto(URL)
   await page.waitForSelector('#AspNetPager1_input')
-  await page.select('#AspNetPager1_input', "" + PAGE_TOTAL);
+  await page.select('#AspNetPager1_input', "" + 2);
   await page.waitFor(3000)
   let subUrls = await page.evaluate(() => {
     let urls = []
@@ -47,16 +51,18 @@ const scrape = async () => {
     let infos = await page.evaluate(() => {
       let detail = [];
       document.querySelectorAll('#myFonts > div:nth-child(2) table  tbody tr').forEach((item, index) => {
-        if (index > 1) {
+        if (index > 0) {
           let code = item.querySelector('td:nth-child(2)').innerText || ''
-          let endPrice = item.querySelector('td:nth-child(5)').innerText || ''
-          let endPriceTotal = item.querySelector('td:nth-child(6)').innerText || ''
+          let endPrice = item.querySelector('td:nth-child(5)').innerText=='/'?'0':item.querySelector('td:nth-child(5)').innerText
+          let endPriceTotal = item.querySelector('td:nth-child(6)').innerText =='/'?'0':item.querySelector('td:nth-child(6)').innerText
           let owner = item.querySelector('td:nth-child(7)').innerText || ''
           detail.push({
             url: location.href,
             code,
             endPrice,
+            endPriceTrans:endPrice.indexOf('亩')>-1?(endPrice.replace(/[^(\d+\.?\d+)]/ig,'')/0.0666).toFixed(2):endPrice.replace(/[^(\d+\.?\d+)]/ig,''),
             endPriceTotal,
+            endPriceTotalTrans:endPriceTotal.replace(/[^(\d+\.?\d+)]/ig,''),
             owner
           })
         }
@@ -66,15 +72,15 @@ const scrape = async () => {
 
     });
 
-    console.log(infos)
-    fs.appendFile('./result.json', JSON.stringify(infos), function (res) {})
+    result = result.concat(infos)
+    fs.writeFile('./result.json', JSON.stringify(result), function (res) {})
   }
 
   if (PAGE_TOTAL > 1) {
     PAGE_TOTAL--;
     scrape()
   }
-  parseData()
+  // parseData()
 }
 
 scrape();

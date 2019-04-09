@@ -5,8 +5,12 @@
 const puppeteer = require("puppeteer-core")
 const fs = require('fs');
 const request = require('request');
-let PAGE_TOTAL = 2;
+let PAGE_TOTAL = 1;
 const URL = 'http://www.cdlr.gov.cn/second/zpgjg.aspx?ClassID=001002002006001';
+let result = []
+fs.readFile('./publish.json', function (err, res) {
+  result = !res.toString()?[]:JSON.parse(res.toString())
+})
 
 const scrape = async () => {
   const browser = await puppeteer.launch({
@@ -19,7 +23,7 @@ const scrape = async () => {
 
   await page.goto(URL)
   await page.waitForSelector('#AspNetPager1_input')
-  await page.select('#AspNetPager1_input', "" + PAGE_TOTAL);
+  await page.select('#AspNetPager1_input', "" + 2);
   await page.waitFor(3000)
   let subUrls = await page.evaluate(() => {
     let urls = []
@@ -51,7 +55,8 @@ const scrape = async () => {
             address,
             area,
             type,
-            startPrice
+            startPrice,
+            startPriceTrans:startPrice.indexOf('亩')>-1?(startPrice.replace(/[^(\d+\.?\d+)]/ig,'')/0.0666).toFixed(2):startPrice.replace(/[^(\d+\.?\d+)]/ig,'')
           })
         }
       })
@@ -75,14 +80,16 @@ const scrape = async () => {
         infos[i].localImg = imgSplit[imgSplit.length - 1];
         await request(img).pipe(fs.createWriteStream(`./images/${imgSplit[imgSplit.length - 1]}`));
       }
-      fs.appendFile('publish.json', JSON.stringify(infos).replace(/\]\[/ig, ','), function (res) {})
     }
+    result = result.concat(infos)
+    fs.writeFile('publish.json', JSON.stringify(result).replace(/\]\[/ig, ','), function (res) {})
   }
 
   if (PAGE_TOTAL > 1) {
     PAGE_TOTAL--;
     scrape()
   }
+  // parseData();
 }
 const parseData = () => {
   let content = [];
@@ -99,4 +106,3 @@ const parseData = () => {
   })
 }
 scrape();
-parseData();
