@@ -2,17 +2,17 @@
   {
     "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=10862",
     "code": "GX15(252/211):\n\n2010-041",
-    "endPrice": "650\n\n万元/亩",
-    "endPriceTrans": "9759.76",
+    "endPrice": "1020\n\n万元/亩",
+    "endPriceTrans": "15315.32",
     "endPriceTotal": "1020\n\n万元/亩",
-    "endPriceTotalTrans": "1020",
+    "endPriceTotalTrans": "122400",
     "owner": "中铁房地产集团有限公司"
   },
   {
     "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=10862",
     "code": "CH02\n\n(252/211/242):\n\n2010-042",
-    "endPrice": "楼面地价\n\n单价：2335元/平方米",
-    "endPriceTrans": "2335",
+    "endPrice": "0",
+    "endPriceTrans": "0",
     "endPriceTotal": "0",
     "endPriceTotalTrans": "0",
     "owner": "流拍"
@@ -20,7 +20,7 @@
   {
     "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=10862",
     "code": "CH03(252/211):\n\n2010-043",
-    "endPrice": "楼面地价\n\n单价：2000元/平方米",
+    "endPrice": "0",
     "endPriceTrans": "2000",
     "endPriceTotal": "0",
     "endPriceTotalTrans": "0",
@@ -29,10 +29,10 @@
   {
     "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=10862",
     "code": "WH17(252/211):\n\n2010-044",
-    "endPrice": "楼面地价\n\n单价：2600元/平方米",
+    "endPrice": "2680",
     "endPriceTrans": "2600",
-    "endPriceTotal": "楼面地价\n\n单价：2680\n\n元/平方米",
-    "endPriceTotalTrans": "2680",
+    "endPriceTotal": "46561462.4",
+    "endPriceTotalTrans": "4656.14624",
     "owner": "成都市武侯城市发展投资有限责任公司"
   },
   {
@@ -66,18 +66,58 @@
     "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=10810",
     "code": "LQ01(211/252):2010-031",
     "endPrice": "90",
-    "endPriceTrans": "90",
-    "endPriceTotal": "90",
-    "endPriceTotalTrans": "90",
-    "owner": "3408.7590"
+    "endPriceTrans": "1351",
+    "endPriceTotal": "3408.7590",
+    "endPriceTotalTrans": "3408.7590",
+    "owner": "成都九峰汽车汽配商城经营管理有限公司"
   },
   {
     "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=10810",
     "code": "XD02(211)：2010-033",
     "endPrice": "66",
-    "endPriceTrans": "66",
+    "endPriceTrans": "1000",
     "endPriceTotal": "162",
     "endPriceTotalTrans": "162",
-    "owner": "5322.5424"
+    "owner": "成都市煌鑫投资有限公司"
+  },
+  {
+    "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=51634",
+    "code": "DY07(211):2013-269",
+    "endPrice": "40万元/亩",
+    "endPriceTrans": "600",
+    "endPriceTotalTrans": "3174.3961",
+    "owner": "成都新世界千福置业有限公司"
+  },
+  {
+    "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=51634",
+    "code": "WJ11(252/211):2013-274",
+    "endPrice": "181万元/亩",
+    "endPriceTrans": "2717.72",
+    "endPriceTotalTrans": "3174.3961",
+    "owner": "成都新世界千福置业有限公司"
+  },
+  {
+    "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=51634",
+    "code": "DY08(251)：2013-270",
+    "endPrice": "40万元/亩",
+    "endPriceTrans": "600",
+    "endPriceTotalTrans": "1197.6880",
+    "owner": "成都新世界千福置业有限公司"
+  },
+  {
+    "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=51634",
+    "code": "DY10(251)：2013-272",
+    "endPrice": "40万元/亩",
+    "endPriceTrans": "600",
+    "endPriceTotalTrans": "1223.66",
+    "owner": "成都新世界千福置业有限公司"
+  },
+  {
+    "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=51634",
+    "code": "DY06(251):2013-268",
+    "endPrice": "40万元/亩",
+    "endPriceTrans": "600",
+    "endPriceTotalTrans": "1539.5040",
+    "owner": "成都新世界千福置业有限公司"
   }
 ]
