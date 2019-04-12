@@ -101,7 +101,7 @@
     "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=30200",
     "code": "QY02(252/211):2011-23",
     "endPrice": "楼面地价：3280元/m2",
-    "endPriceTrans": "32802",
+    "endPriceTrans": "3280",
     "owner": "中铁八局集团成都中泰房地产开发有限公司"
   },
   {
@@ -114,15 +114,15 @@
   {
     "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=30200",
     "code": "LQ02(252/211/242):2011-52",
-    "endPrice": "500万元/亩",
-    "endPriceTrans": "7507.51",
-    "owner": "报名人数不足三家"
+    "endPrice": "0",
+    "endPriceTrans": "0",
+    "owner": "流拍"
   },
   {
     "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=30197",
     "code": "CH012（211）：2011-43",
     "endPrice": "楼面地价：1300元/m2",
-    "endPriceTrans": "13002",
+    "endPriceTrans": "1300",
     "owner": "四川合信旅游开发有限公司"
   },
   {
@@ -138,34 +138,6 @@
     "endPrice": "206万元/亩",
     "endPriceTrans": "3093.09",
     "owner": "成都西星鹰港置业有限公司"
-  },
-  {
-    "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=29946",
-    "code": "1",
-    "endPrice": "77",
-    "endPriceTrans": "77",
-    "owner": "成都市崇州联创城乡统筹投资有限公司"
-  },
-  {
-    "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=29946",
-    "code": "2",
-    "endPrice": "23",
-    "endPriceTrans": "23",
-    "owner": "成都同森岷江置业有限公司"
-  },
-  {
-    "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=29946",
-    "code": "3",
-    "endPrice": "107",
-    "endPriceTrans": "107",
-    "owner": "四川中达置业有限公司"
-  },
-  {
-    "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=29946",
-    "code": "4",
-    "endPrice": "137",
-    "endPriceTrans": "137",
-    "owner": "四川兰丰水泥有限公司"
   },
   {
     "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=29944",
@@ -226,8 +198,8 @@
   {
     "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=29913",
     "code": "SL06(252/211):2011-50",
-    "endPrice": " ",
-    "endPriceTrans": "",
+    "endPrice": "0",
+    "endPriceTrans": "0",
     "owner": "报名不足三家"
   },
   {
@@ -296,57 +268,57 @@
   {
     "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=28973",
     "code": "XD02(252/211):\n2011-31",
-    "endPrice": "430",
+    "endPrice": "430万/亩",
     "endPriceTrans": "430",
     "owner": "成都市新神风实业有限责任公司"
   },
   {
     "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=28973",
     "code": "XD03(252/211):\n2011-32",
-    "endPrice": "440",
-    "endPriceTrans": "440",
+    "endPrice": "440万/亩",
+    "endPriceTrans": "6456",
     "owner": "成都市新嘉美置业有限公司、成都市富地房地产开发有限公司"
   },
   {
     "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=28973",
     "code": "XD04(252/211):\n2011-33",
-    "endPrice": "205",
-    "endPriceTrans": "205",
+    "endPrice": "205万/亩",
+    "endPriceTrans": "3078",
     "owner": "成都市保丰投资有限公司"
   },
   {
     "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=28973",
     "code": "WJ01(252/211):\n2011-34",
-    "endPrice": "240",
-    "endPriceTrans": "240",
+    "endPrice": "240万/亩",
+    "endPriceTrans": "3603",
     "owner": "四川华电明科电力设备制造有限公司"
   },
   {
     "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=28973",
     "code": "QL04(252/211):\n2011-35",
-    "endPrice": "165",
-    "endPriceTrans": "165",
+    "endPrice": "165万/亩",
+    "endPriceTrans": "2477",
     "owner": "成都文旅龙门山旅游投资有限公司"
   },
   {
     "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=28699",
     "code": "SL03(211):2011-22",
-    "endPrice": "279",
-    "endPriceTrans": "279",
+    "endPrice": "279万/亩",
+    "endPriceTrans": "4189",
     "owner": "四川浩森投资有限公司"
   },
   {
     "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=28699",
     "code": "SL04(211):2011-23",
-    "endPrice": "160",
-    "endPriceTrans": "160",
+    "endPrice": "160万/亩",
+    "endPriceTrans": "2402",
     "owner": "四川浩森投资有限公司"
   },
   {
     "url": "http://www.cdlr.gov.cn/detailnoright.aspx?id=28699",
     "code": "SL05(211):2011-24",
-    "endPrice": "200",
-    "endPriceTrans": "200",
+    "endPrice": "200万/亩",
+    "endPriceTrans": "3003",
     "owner": "四川浩森投资有限公司"
   }
 ]
