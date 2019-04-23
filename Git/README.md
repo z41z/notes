@@ -34,3 +34,6 @@ git pull origin master --allow-unrelated-histories
 git config --global http.postBuffer 524288000
 git config --global http.proxy <http://127.0.0.1:1080> SS本地代理
 git config --global http.proxy <https://127.0.0.1:1080> SS本地代理
+
+### 检出分支
+git checkout -b 本地分支名 origin/远程分支名
