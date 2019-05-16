@@ -30,3 +30,8 @@
 ``` node
   npm deprecate packageName[version] Message
 ```
+
+#### 设置sass镜像源
+``` node
+  npm config set sass-binary-site http://npm.taobao.org/mirrors/node-sass
+```
