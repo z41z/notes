@@ -1,5 +1,6 @@
 ### Install
 ``` bash
+  yum -y install wget
   wget http://dl.wdlinux.cn/lanmp_laster.tar.gz
   tar zxvf lanmp_laster.tar.gz
   sh lanmp.sh
