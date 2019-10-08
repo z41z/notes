@@ -40,3 +40,9 @@ git checkout -b 本地分支名 origin/远程分支名
 
 ### 提交本地分支
 git push origin 本地分支名:远程分支名
+
+### 添加标签
+git tag -a 标签名 -m '标签说明'
+
+### 提交本地标签
+git push origin 标签名
