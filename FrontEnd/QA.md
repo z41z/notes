@@ -1,43 +1,43 @@
-### Frontend Why? How to learn?
+- #### Frontend Why? How to learn?
 
-### Technical atmosphere?
+- #### Technical atmosphere?
 
-### Personal Project?
+- #### Personal Project?
 
-### CSS Media Query.
+- #### CSS Media Query.
 
-### CSS Triangle.
+- #### CSS Triangle.
 
-### CSS Vertical-Horizontal-Align.
+- #### CSS Vertical-Horizontal-Align.
 
-### jQuery closest and siblings Function via JavaScript(Chrome/Edge).
+- #### jQuery closest and siblings Function via JavaScript(Chrome/Edge).
 
-### 10 Interface return total.
+- #### 10 Interface return total.
 `callback`、`Promise.all`、`async/await`
 
-### String to Number.
+- #### String to Number.
 
-### Array Deduplicate.
+- #### Array Deduplicate.
 
-### Vue-Router mode, difference?
+- #### Vue-Router mode, difference?
 
-### Dynamic-Router.
+- #### Dynamic-Router.
 
-### Router-Lazyload.
+- #### Router-Lazyload.
 
-### Menu components or Components Recursion.
+- #### Menu components or Components Recursion.
 
-### SPA deployment.
+- #### SPA deployment.
 
-### Webpack work flow.
+- #### Webpack work flow.
 
-### Webpack Code-Splitting.
+- #### Webpack Code-Splitting.
 
-### Cross-Domain and Same Origin Policy.
+- #### Cross-Domain and Same Origin Policy.
 
-### XSS/CSRF,avoid?
+- #### XSS/CSRF,avoid?
 
-### BBS/Blog/Article/Wechat.
+- #### BBS/Blog/Article/Wechat.
 
-### Career planning?
+- #### Career planning?
 
