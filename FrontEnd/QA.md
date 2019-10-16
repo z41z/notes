@@ -13,9 +13,12 @@
 - #### jQuery closest and siblings Function via JavaScript(Chrome/Edge).
 
 - #### 10 Interface return total.
-`callback`、`Promise.all`、`async/await`
+  `callback`、`Promise.all`、`async/await`
 
 - #### String to Number.
+
+- #### Parse to Boolean
+  `null`、`" "`、`[]`、`{}`、`1`、`0`、`"1"`、`"0"`、`undefined`、`NaN`、`""`
 
 - #### Array Deduplicate.
 
