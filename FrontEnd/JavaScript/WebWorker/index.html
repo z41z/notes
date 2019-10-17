@@ -1,0 +1,19 @@
+First Name<input type="text" id="firstName">
+Last Name<input type="text" id="lastName">
+<div>Full Name:<span id="fullName"></span></div>
+<script>
+  let firstName = document.querySelector('#firstName')
+  let lastName = document.querySelector('#lastName')
+  let worker = new Worker('worker.js');
+  firstName.onchange = function () {
+    worker.postMessage([firstName.value, lastName.value]);
+  }
+
+  lastName.onchange = function () {
+    worker.postMessage([firstName.value, lastName.value]);
+  }
+
+  worker.onmessage = function (e) {
+    document.querySelector('#fullName').innerText = e.data
+  }
+</script>
