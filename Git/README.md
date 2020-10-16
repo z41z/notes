@@ -46,3 +46,9 @@ git tag -a 标签名 -m '标签说明'
 
 ### 提交本地标签
 git push origin 标签名
+
+### 删除远程分支
+ git push origin --delete test-feat
+ 
+### 删除本地分支
+git branch -d test-feat
