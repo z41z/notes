@@ -52,3 +52,9 @@ git push origin 标签名
  
 ### 删除本地分支
 git branch -d test-feat
+
+### 提交到新分支
+git push -u origin new_branch
+
+### 删除远程旧分支
+git push origin :old_branch
