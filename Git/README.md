@@ -58,3 +58,9 @@ git push -u origin new_branch
 
 ### 删除远程旧分支
 git push origin :old_branch
+
+### 重命名分支
+  - git branch -m oldBranchName newBranchName
+  - git push --delete origin oldBranchName
+  - git push origin newBranchName
+  - git branch --set-upstream-to origin/newBranchName
